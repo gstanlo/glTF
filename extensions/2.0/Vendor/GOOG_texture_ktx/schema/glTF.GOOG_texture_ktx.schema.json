@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "GOOG_texture_ktx extension",
+  "type": "object",
+  "description": "glTF extension to specify textures using the Khronos Texture file format (KTX).",
+  "allOf": [ { "$ref": "glTFProperty.schema.json" } ],
+  "properties": {
+    "source": {
+      "allOf": [ { "$ref": "glTFid.schema.json" } ],
+      "description": "The index of the images node which points to a KTX texture file."
+    },
+    "extensions": {},
+    "extras": {}
+  }
+}
